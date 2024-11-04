@@ -10,6 +10,7 @@ Table of Contents:
 - [5. Calculate Area](#5-calculate-area)
 - [6. Convert to fahrenheit](#6-convert-to-fahrenheit)
 - [7. Basketball Shots](#7-basketball-shots)
+- [8. Longest Unique Substring](#8-longest-unique-substring)
 
 ## 0. Hello Function
 Write a dart function `helloFunction()` that accepts one argument String and print `Hello <str> from dart`
@@ -156,12 +157,32 @@ A 3 pointer shot counts as 3 Points.
 Function prototype : `int whoWins(Map<String, int> teamA, Map<String, int> teamB);`
 
 ```sh
-achref@achref:~$ dart 7-main.dart
+$ dart 7-main.dart
 1
-achref@achref:~$
+$
 ```
 
 - Given Files: [7-main.dart](7-main.dart)
 - File: `7-basketball-shots.dart`
+
+<sub>[Return to Top](#0x01-dart-function)</sub>
+
+## 8. Longest Unique Substring
+Write a function `longestUniqueSubstring()` that accepts one argument `String` and returns the longest non-repeating substring.
+
+Function prototype : `String longestUniqueSubstring(String str);`
+
+If multiple substrings tie in length, return the one which occurs first.
+
+```sh
+$ dart 8-main.dart
+acbd
+a
+abcde
+$
+```
+
+- Given Files: [8-main.dart](8-main.dart)
+- File: `8-longest-unique-substring.dart`
 
 <sub>[Return to Top](#0x01-dart-function)</sub>
