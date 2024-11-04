@@ -8,6 +8,7 @@ Table of Contents:
 - [3. Factorial](#3-factorial)
 - [4. Outer Inner](#4-outer-inner)
 - [5. Calculate Area](#5-calculate-area)
+- [6. Convert to fahrenheit](#6-convert-to-fahrenheit)
 
 ## 0. Hello Function
 Write a dart function `helloFunction()` that accepts one argument String and print `Hello <str> from dart`
@@ -112,5 +113,27 @@ $
 
 - Given Files: [5-main.dart](5-main.dart)
 - File: `5-calculate-area.dart`
+
+<sub>[Return to Top](#0x01-dart-function)</sub>
+
+## 6. Convert to fahrenheit
+Create a function `convertToF()` that accepts a list of doubles representing a list of temperatures in celsius, converts them to fahrenheit and returns them in a list.
+
+Function prototype : `List<double> convertToF(List<double> temperaturesInC);`
+
+To convert temperature from celsius to fahrenheit you need to multiply it by 9, followed by a division by 5 and finally add 32.
+
+Let’s for example convert 25 degrees celsius : (25°C × 9/5) + 32 = 77°F You have to use the map method. All the results should be rounded to two decimal points.
+
+```sh
+$ dart 6-main.dart
+[77.0, 78.8, 73.4, 80.6, 86.0]
+[72.5, 78.8, 81.14, 74.48, 77.0]
+[24.44, 28.4, 32.9, 23.0, 28.94]
+$
+```
+
+- Given Files: [6-main.dart](6-main.dart)
+- File: `6-convert-to-fahrenheit.dart`
 
 <sub>[Return to Top](#0x01-dart-function)</sub>
