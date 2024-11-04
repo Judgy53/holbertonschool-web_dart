@@ -9,6 +9,7 @@ Table of Contents:
 - [3. Print Doubles](#3-print-doubles)
 - [4. Print string](#4-print-string)
 - [5. Assertion](#5-assertion)
+- [6. Positive anything is better than negative nothing](#6-positive-anything-is-better-than-negative-nothing)
 
 ## 0. Hello Holberton!
 Write a dart program that print `Hello Holberton!` followed by a new line.
@@ -151,5 +152,33 @@ $
 ```
 
 - File: `5-assertion.dart`
+
+<sub>[Return to Top](#0x00-hello-dart)</sub>
+
+## 6. Positive anything is better than negative nothing
+Write a dart Program That given an argument ,determine if its positive or negative
+- The variable number will store as a string you should converted to integer
+- The output of the program should be:
+- The number, followed by
+    - if the number is greater than 0: `is positive`
+    - if the number is 0: `is zero`
+    - if the number is less than 0:`is negative`
+
+```sh
+$ dart 6-positive_or_negative.dart -4
+-4 is negative
+$ dart 6-positive_or_negative.dart 0
+0 is zero
+$ dart 6-positive_or_negative.dart -3
+-3 is negative
+$ dart 6-positive_or_negative.dart 10
+10 is positive
+$ dart 6-positive_or_negative.dart 6
+6 is positive
+$ dart 6-positive_or_negative.dart -10
+-10 is negative
+$
+```
+- File: `6-positive_or_negative.dart`
 
 <sub>[Return to Top](#0x00-hello-dart)</sub>
