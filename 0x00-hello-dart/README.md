@@ -8,6 +8,7 @@ Table of Contents:
 - [2. Print Number](#2-print-number)
 - [3. Print Doubles](#3-print-doubles)
 - [4. Print string](#4-print-string)
+- [5. Assertion](#5-assertion)
 
 ## 0. Hello Holberton!
 Write a dart program that print `Hello Holberton!` followed by a new line.
@@ -118,5 +119,37 @@ $
 ```
 
 - File: `4-print_string.dart`
+
+<sub>[Return to Top](#0x00-hello-dart)</sub>
+
+## 5. Assertion
+Complete this source code in order to make it check if the number is bigger or equal to 80 print `You Passed` otherwise the output should be `Uncaught Error: Assertion failed: "The score must be bigger or equal to 80`
+
+- You are not allowed to use IF/ELSE
+
+```dart
+void main(List<String> args) {
+  /*
+  Write Your code below
+   */
+}
+```
+
+```sh
+$ dart --enable-asserts 5-assertion.dart 79
+Unhandled exception:
+'file://5-assertion.dart': Failed assertion: line 3 pos 10: 'nb >= 80': The score must be bigger or equal to 80
+#0      _AssertionError._doThrowNew (dart:core-patch/errors_patch.dart:51:61)
+#1      _AssertionError._throwNew (dart:core-patch/errors_patch.dart:40:5)
+#2      main (file://5-assertion.dart:3:10)
+#3      _delayEntrypointInvocation.<anonymous closure> (dart:isolate-patch/isolate_patch.dart:295:32)
+#4      _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:192:12)
+
+$ dart --enable-asserts 5-assertion.dart 80
+You Passed
+$
+```
+
+- File: `5-assertion.dart`
 
 <sub>[Return to Top](#0x00-hello-dart)</sub>
