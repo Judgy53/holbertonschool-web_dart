@@ -7,6 +7,7 @@ Table of Contents:
 - [2. Add/Sub](#2-addsub)
 - [3. Factorial](#3-factorial)
 - [4. Outer Inner](#4-outer-inner)
+- [5. Calculate Area](#5-calculate-area)
 
 ## 0. Hello Function
 Write a dart function `helloFunction()` that accepts one argument String and print `Hello <str> from dart`
@@ -91,5 +92,25 @@ $
 
 - Given Files: [4-main.dart](4-main.dart)
 - File: `4-outer_inner.dart`
+
+<sub>[Return to Top](#0x01-dart-function)</sub>
+
+## 5. Calculate Area
+Create a function `calculateArea()` that accepts two variables `height` and `base` and returns the area of the triangle.
+
+Function prototype : `double calculateArea(double height, double base);`
+
+The result should be rounded to two decimal places
+
+```sh
+$ dart 5-main.dart
+70.0
+35.0
+15.73
+$
+```
+
+- Given Files: [5-main.dart](5-main.dart)
+- File: `5-calculate-area.dart`
 
 <sub>[Return to Top](#0x01-dart-function)</sub>
