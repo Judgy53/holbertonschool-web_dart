@@ -5,6 +5,7 @@ Table of Contents:
 - [0. Hello Function](#0-hello-function)
 - [1. Concatenate Strings](#1-concatenate-strings)
 - [2. Add/Sub](#2-addsub)
+- [3. Factorial](#3-factorial)
 
 ## 0. Hello Function
 Write a dart function `helloFunction()` that accepts one argument String and print `Hello <str> from dart`
@@ -52,5 +53,25 @@ $
 ```
 - Given Files: [2-main.dart](2-main.dart)
 - File: `2-sumfunc.dart`
+
+<sub>[Return to Top](#0x01-dart-function)</sub>
+
+## 3. Factorial
+Write recursive function to compute the factorial of a positive integer `fact()`
+
+- Function prototype : `int fact(int f)`
+    - If `f == 1` the function return 1
+    - If `f <= 0` return 1
+
+```sh
+$ dart 3-main.dart
+1
+1
+120
+$
+```
+
+- Given Files: [3-main.dart](3-main.dart)
+- File: `3-factors.dart`
 
 <sub>[Return to Top](#0x01-dart-function)</sub>
