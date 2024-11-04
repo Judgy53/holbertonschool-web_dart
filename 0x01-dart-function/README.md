@@ -6,6 +6,7 @@ Table of Contents:
 - [1. Concatenate Strings](#1-concatenate-strings)
 - [2. Add/Sub](#2-addsub)
 - [3. Factorial](#3-factorial)
+- [4. Outer Inner](#4-outer-inner)
 
 ## 0. Hello Function
 Write a dart function `helloFunction()` that accepts one argument String and print `Hello <str> from dart`
@@ -73,5 +74,22 @@ $
 
 - Given Files: [3-main.dart](3-main.dart)
 - File: `3-factors.dart`
+
+<sub>[Return to Top](#0x01-dart-function)</sub>
+
+## 4. Outer Inner
+Write two functions the first function `outer()` take two argument `name`, `id` and print the output of the inside function `inner()`.
+- Function prototype : `void outer(String name, String id)`
+- Function prototype : `String inner()`
+- `name` will always consist of two words
+
+```sh
+$ dart 4-main.dart
+Hello Agent B.Youssef your id is 001
+$
+```
+
+- Given Files: [4-main.dart](4-main.dart)
+- File: `4-outer_inner.dart`
 
 <sub>[Return to Top](#0x01-dart-function)</sub>
