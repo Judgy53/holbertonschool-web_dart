@@ -9,6 +9,7 @@ Table of Contents:
 - [4. Outer Inner](#4-outer-inner)
 - [5. Calculate Area](#5-calculate-area)
 - [6. Convert to fahrenheit](#6-convert-to-fahrenheit)
+- [7. Basketball Shots](#7-basketball-shots)
 
 ## 0. Hello Function
 Write a dart function `helloFunction()` that accepts one argument String and print `Hello <str> from dart`
@@ -135,5 +136,32 @@ $
 
 - Given Files: [6-main.dart](6-main.dart)
 - File: `6-convert-to-fahrenheit.dart`
+
+<sub>[Return to Top](#0x01-dart-function)</sub>
+
+## 7. Basketball Shots
+Given two maps that represents the number of successful shots for each shot type in a basketball game between team A and Team B.
+
+Create a function `whoWins()` that calculates the total number of points for each team and return the winning team:
+- If teamA points &gt; teamB points return 1
+- If teamA points &lt; teamB points return 2
+- If teamA points = TeamB points return 0
+
+A free throw shot counts as 1 Point.
+
+A 2 pointer shot counts as 2 Points.
+
+A 3 pointer shot counts as 3 Points.
+
+Function prototype : `int whoWins(Map<String, int> teamA, Map<String, int> teamB);`
+
+```sh
+achref@achref:~$ dart 7-main.dart
+1
+achref@achref:~$
+```
+
+- Given Files: [7-main.dart](7-main.dart)
+- File: `7-basketball-shots.dart`
 
 <sub>[Return to Top](#0x01-dart-function)</sub>
