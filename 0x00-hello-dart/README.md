@@ -7,6 +7,7 @@ Table of Contents:
 - [1. The Quotes](#1-the-quotes)
 - [2. Print Number](#2-print-number)
 - [3. Print Doubles](#3-print-doubles)
+- [4. Print string](#4-print-string)
 
 ## 0. Hello Holberton!
 Write a dart program that print `Hello Holberton!` followed by a new line.
@@ -87,5 +88,35 @@ $
 ```
 
 - File: `3-print_double.dart`
+
+<sub>[Return to Top](#0x00-hello-dart)</sub>
+
+## 4. Print string
+Complete this source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
+
+- The output of the program should be:
+    - 3 times the value of str
+    - followed by a new line and the 9 first characters of str
+    - followed by a new line
+- You are not allowed to use any loops or conditional statement
+- Your program should be maximum 5 lines long
+
+Source code:
+```dart
+void main() {
+  String str = "Holberton School";
+}
+```
+
+```sh
+$ dart 4-print_string.dart > output
+$ cat -e output
+Holberton SchoolHolberton SchoolHolberton School$
+Holberton$
+$
+$
+```
+
+- File: `4-print_string.dart`
 
 <sub>[Return to Top](#0x00-hello-dart)</sub>
