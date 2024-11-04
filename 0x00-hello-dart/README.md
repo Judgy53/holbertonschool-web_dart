@@ -6,6 +6,7 @@ Table of Contents:
 - [0. Hello Holberton!](#0-hello-holberton)
 - [1. The Quotes](#1-the-quotes)
 - [2. Print Number](#2-print-number)
+- [3. Print Doubles](#3-print-doubles)
 
 ## 0. Hello Holberton!
 Write a dart program that print `Hello Holberton!` followed by a new line.
@@ -61,5 +62,30 @@ $ dart 2-print_number.dart
 $
 ```
 - File: `2-print_number.dart`
+
+<sub>[Return to Top](#0x00-hello-dart)</sub>
+
+## 3. Print Doubles
+Complete this source code in order to print the doubles stored in the variable number with a precision of 2 digits.
+
+- The output of the program should be:
+    - `Double:` followed by the double with only 2 digits
+    - followed by a new line
+
+Source Code:
+```dart
+void main() {
+  var n = 3.14159265359;
+}
+```
+
+```sh
+$ dart 3-print_double.dart
+Double: 3.14
+
+$
+```
+
+- File: `3-print_double.dart`
 
 <sub>[Return to Top](#0x00-hello-dart)</sub>
