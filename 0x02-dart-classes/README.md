@@ -8,6 +8,7 @@ Table of Contents:
 - [3. Private Password](#3-private-password)
 - [4. Mutables](#4-mutables)
 - [5. Json to User](#5-json-to-user)
+- [6. Inheritance](#6-inheritance)
 
 ## 0. Welcome.
 Create a `User` class:
@@ -129,5 +130,41 @@ $
 
 - Given Files: [5-main.dart](5-main.dart)
 - File: `5-json_to_user.dart`
+
+<sub>[Return to Top](#0x02-dart-classes)</sub>
+
+## 6. Inheritance
+Copy the class `Password` from `4-mutables.dart` -\&gt; `6-password.dart`:
+
+Copy the last task and extend the `Password` class to `User`
+- Create a new property in the `User` class called `user_password` that contain the password.
+- Add null check to all targets in `6-password.dart` and null coalescing operator if necessary.
+- Call `isValid` method from `Password` class after you passed `user_password` to `Password` class.
+
+```sh
+$ dart 6-main.dart
+<===========Json=========>:
+
+
+{id: 1, name: Djo, age: 25, height: 1.89}
+
+
+<===========Test1===========>:
+
+
+User(id : 1 ,name: Djo, age: 25, height: 1.89, Password: true)
+User(id : 3 ,name: Youssef, age: 26, height: 1.9, Password: true)
+
+
+<===========Test2===========>:
+
+
+User(id : 1 ,name: Djo, age: 25, height: 1.89, Password: false)
+User(id : 3 ,name: Youssef, age: 26, height: 1.9, Password: true)
+$
+```
+
+- Given Files: [6-main.dart](6-main.dart)
+- File: `6-inheritance.dart, 6-password.dart`
 
 <sub>[Return to Top](#0x02-dart-classes)</sub>
