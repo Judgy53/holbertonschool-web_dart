@@ -7,6 +7,7 @@ Table of Contents:
 - [2. Password](#2-password)
 - [3. Private Password](#3-private-password)
 - [4. Mutables](#4-mutables)
+- [5. Json to User](#5-json-to-user)
 
 ## 0. Welcome.
 Create a `User` class:
@@ -104,5 +105,29 @@ $
 
 - Given Files: [4-main.dart](4-main.dart)
 - File: `4-mutables.dart`
+
+<sub>[Return to Top](#0x02-dart-classes)</sub>
+
+## 5. Json to User
+Copy the code that you did in the `1-usertojson.dart` add property called `id` to the `User` class
+- Add `id` to `toJson()` method
+
+Create a new instance called `fromJson` it accept `Map` as parameter should return every value inside it.
+
+- Prototype :
+    - `static User fromJson(Map<dynamic, dynamic> userJson)`
+
+Create a method called `toString()` that returns a string =&gt; User(id : `id` ,name: `name`, age: `age`, height: `height`);
+
+```sh
+$ dart 5-main.dart
+{id: 1, name: Djo, age: 25, height: 1.89}
+User(id : 1 ,name: Djo,  age: 25, height: 1.89)
+User(id : 3 ,name: Youssef,  age: 26, height: 1.9)
+$
+```
+
+- Given Files: [5-main.dart](5-main.dart)
+- File: `5-json_to_user.dart`
 
 <sub>[Return to Top](#0x02-dart-classes)</sub>
