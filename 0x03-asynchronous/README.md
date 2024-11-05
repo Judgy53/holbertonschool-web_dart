@@ -8,6 +8,7 @@ Table of Contents:
 - [0. Users Count](#0-users-count)
 - [1. Get User ID](#1-get-user-id)
 - [2. Get User](#2-get-user)
+- [3. Greet User](#3-greet-user)
 
 ## 0. Users Count
 Create a function `usersCount()` that prints the number of users.
@@ -70,6 +71,17 @@ Gets the user data by calling the provided function `fetchUser()`
 
 Must use : try-catch If an error occurs the function should print “`error caught: <error>` ”
 
+- 2-util.dart
+```dart
+Future<String> fetchUser() =>
+    // Imagine that this function is
+    // more complex and slow.
+    Future.delayed(
+      const Duration(seconds: 2),
+      () => throw 'Cannot locate user',
+    );
+```
+
 ```sh
 $ dart 2-main.dart
 error caught: Cannot locate user
@@ -78,5 +90,49 @@ $
 
 - Given Files: [2-main.dart](2-main.dart)
 - File: `2-get_user.dart`
+
+<sub>[Return to Top](#0x03-asynchronous)</sub>
+
+## 3. Greet User
+Create a function `greetUser()` that returns a string as follows `Hello <username>` .
+
+Function prototype : `Future<String> greetUser()`
+
+Gets the user data by calling the provided function `fetchUserData()`
+
+Must use try-catch If an error occurs the function should return : `error caught: <error>`
+
+Create a function `loginUser()`
+
+Function prototype : `Future<String> loginUser()`
+
+Should call the provided function `checkCredentials()` which returns a `future bool`.
+
+- If `checkCredentials()` returns `true` `loginUser()` should print `There is a user: true` and call `greetUser()` to return it’s value
+- If `checkCredentials()` returns `false` `loginUser()` should print `There is a user: false` and return `Wrong credentials`
+
+Must use try-catch If an error occurs the function should return `error caught: <error>`
+
+- 3-util.dart
+```dart
+Future<String> fetchUserData() => Future.delayed(
+      const Duration(seconds: 2),
+      () =>
+          '{"id" : "7ee9a243-01ca-47c9-aa14-0149789764c3", "username" : "admin"}',
+    );
+
+Future<bool> checkCredentials() =>
+    Future.delayed(const Duration(seconds: 2), () => true);
+```
+
+```sh
+$ dart 3-main.dart
+There is a user: true
+Hello admin
+$
+```
+
+- Given Files: [3-main.dart](3-main.dart)
+- File: `3-greet_user.dart`
 
 <sub>[Return to Top](#0x03-asynchronous)</sub>
