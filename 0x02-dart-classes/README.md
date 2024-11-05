@@ -5,6 +5,7 @@ Table of Contents:
 - [0. Welcome.](#0-welcome)
 - [1. User to Json](#1-user-to-json)
 - [2. Password](#2-password)
+- [3. Private Password](#3-private-password)
 
 ## 0. Welcome.
 Create a `User` class:
@@ -65,5 +66,22 @@ $
 
 - Given Files: [2-main.dart](2-main.dart)
 - File: `2-password.dart`
+
+<sub>[Return to Top](#0x02-dart-classes)</sub>
+
+## 3. Private Password
+Copy the last task and make the property `password` private
+
+```sh
+$ dart 3-main.dart
+Your Password is Passwordcode
+false
+Your Password is PasswordDecode3
+true
+$
+```
+
+- Given Files: [3-main.dart](3-main.dart)
+- File: `3-private_password.dart`
 
 <sub>[Return to Top](#0x02-dart-classes)</sub>
