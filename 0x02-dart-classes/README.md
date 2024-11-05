@@ -6,6 +6,7 @@ Table of Contents:
 - [1. User to Json](#1-user-to-json)
 - [2. Password](#2-password)
 - [3. Private Password](#3-private-password)
+- [4. Mutables](#4-mutables)
 
 ## 0. Welcome.
 Create a `User` class:
@@ -83,5 +84,25 @@ $
 
 - Given Files: [3-main.dart](3-main.dart)
 - File: `3-private_password.dart`
+
+<sub>[Return to Top](#0x02-dart-classes)</sub>
+
+## 4. Mutables
+Lets make our data mutable now. Copy the code from the last task and add the `Getters` and `Setters` so we can assign and retrieve the value.
+
+- Should use `get` keyword for the getter.
+- Should use `set` keyword for the setter.
+
+```sh
+$ dart 4-main.dart
+false
+Your Password is: Passwordecode
+true
+Your Password is: Youssef4321
+$
+```
+
+- Given Files: [4-main.dart](4-main.dart)
+- File: `4-mutables.dart`
 
 <sub>[Return to Top](#0x02-dart-classes)</sub>
