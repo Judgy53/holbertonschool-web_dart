@@ -7,6 +7,7 @@ In this project, we learned how to write and use asynchronous code in dart.
 Table of Contents:
 - [0. Users Count](#0-users-count)
 - [1. Get User ID](#1-get-user-id)
+- [2. Get User](#2-get-user)
 
 ## 0. Users Count
 Create a function `usersCount()` that prints the number of users.
@@ -55,5 +56,27 @@ $
 
 - Given Files: [1-main.dart](1-main.dart)
 - File: `1-get_user_id.dart`
+
+<sub>[Return to Top](#0x03-asynchronous)</sub>
+
+## 2. Get User
+Sometimes fetching data from an api could produce unwanted results and may cause errors therefore it’s wise to handle these errors before they become a problem.
+
+Create a function `getUser()` that prints the user’s string representation.
+
+Function prototype : `Future<void> getUser()`
+
+Gets the user data by calling the provided function `fetchUser()`
+
+Must use : try-catch If an error occurs the function should print “`error caught: <error>` ”
+
+```sh
+$ dart 2-main.dart
+error caught: Cannot locate user
+$
+```
+
+- Given Files: [2-main.dart](2-main.dart)
+- File: `2-get_user.dart`
 
 <sub>[Return to Top](#0x03-asynchronous)</sub>
