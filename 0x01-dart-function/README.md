@@ -11,6 +11,7 @@ Table of Contents:
 - [6. Convert to fahrenheit](#6-convert-to-fahrenheit)
 - [7. Basketball Shots](#7-basketball-shots)
 - [8. Longest Unique Substring](#8-longest-unique-substring)
+- [9. Palindrome](#9-palindrome)
 
 ## 0. Hello Function
 Write a dart function `helloFunction()` that accepts one argument String and print `Hello <str> from dart`
@@ -184,5 +185,23 @@ $
 
 - Given Files: [8-main.dart](8-main.dart)
 - File: `8-longest-unique-substring.dart`
+
+<sub>[Return to Top](#0x01-dart-function)</sub>
+
+## 9. Palindrome
+Write a function `isPalindrome()` that accepts one argument `String` and returns `True` if the input `String` is a palindrome otherwise it returns `False`.
+
+Function prototype: `bool isPalindrome(String s);` A palindrome is a sentence that reads the same backward or forward. If the length of the input string is less than 3 characters it doesn’t count as a palindrome.
+
+```sh
+$ dart 9-main.dart
+false
+true
+false
+$
+```
+
+- Given Files: [9-main.dart](9-main.dart)
+- File: `9-palindrome.dart`
 
 <sub>[Return to Top](#0x01-dart-function)</sub>
