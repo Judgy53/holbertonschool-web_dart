@@ -1,8 +1,8 @@
 import 'dart:convert';
 import '4-util.dart';
 
-Future<double> calculateTotal() async {
-  double total = 0;
+Future<num> calculateTotal() async {
+  num total = 0;
 
   try {
     Map<dynamic, dynamic> userData =
