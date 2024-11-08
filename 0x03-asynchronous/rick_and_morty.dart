@@ -8,7 +8,14 @@ Future<dynamic> printRmCharacters() async {
   try {
     var url = Uri.http("rickandmortyapi.com", "api/character");
 
-    while (true) {
+    final response = await client.get(url);
+    final json = jsonDecode(utf8.decode(response.bodyBytes)) as Map;
+
+    for (final entry in json["results"]) {
+      print(entry["name"]);
+    }
+
+    /* while (true) {
       final response = await client.get(url);
       final json = jsonDecode(utf8.decode(response.bodyBytes)) as Map;
 
@@ -19,7 +26,7 @@ Future<dynamic> printRmCharacters() async {
       if (json["info"]["next"] == null) break;
 
       url = Uri.parse(json["info"]["next"]);
-    }
+    } */
   } catch (err) {
     return "error caught: $err";
   } finally {
