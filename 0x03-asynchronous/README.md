@@ -10,6 +10,7 @@ Table of Contents:
 - [2. Get User](#2-get-user)
 - [3. Greet User](#3-greet-user)
 - [4. Calcul Total](#4-calcul-total)
+- [5. Rick and Morty Characters](#5-rick-and-morty-characters)
 
 ## 0. Users Count
 Create a function `usersCount()` that prints the number of users.
@@ -188,5 +189,44 @@ $
 
 - Given Files: [4-main.dart](4-main.dart)
 - File: `4-get_sum.dart`
+
+<sub>[Return to Top](#0x03-asynchronous)</sub>
+
+## 5. Rick and Morty Characters
+Create a file “pubspec.yaml” containing the following lines :
+
+```yaml
+name: rick_and_morty
+
+dependencies:
+  http: ^0.13.3
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+```
+
+Then run : `dart pub get`
+
+Now we can use http to send requests to an online api.
+
+Create a function `printRmCharacters()` that prints all Rick and Morty Characters.
+
+- You should use [Rick and Morty API](https://rickandmortyapi.com/ "Rick and Morty API") to get the data required
+- Must use try-catch
+- If an error occurs the function should return `error caught: <error>`
+
+```sh
+achref@achref:~$ dart 5-main.dart
+Rick Sanchez
+Morty Smith
+Summer Smith
+…
+Amish Cyborg
+Annie
+```
+
+- Given Files: [5-main.dart](5-main.dart)
+- File: `rick_and_morty.dart`
 
 <sub>[Return to Top](#0x03-asynchronous)</sub>
