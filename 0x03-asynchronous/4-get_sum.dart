@@ -16,7 +16,6 @@ Future<double> calculateTotal() async {
       total += price;
     }
   } catch (err) {
-    print(err);
     return -1;
   }
 
