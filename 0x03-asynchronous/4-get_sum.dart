@@ -11,8 +11,7 @@ Future<double> calculateTotal() async {
         await fetchUserOrders(userData["id"]).then((str) => jsonDecode(str));
 
     for (final order in userOrders) {
-      double price =
-          await fetchProductPrice(order).then((str) => double.parse(str));
+      var price = await fetchProductPrice(order).then((str) => jsonDecode(str));
       total += price;
     }
   } catch (err) {
